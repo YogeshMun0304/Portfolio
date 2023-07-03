@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
+import cpp from "../assets/cpp.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
@@ -12,8 +12,12 @@ import node from "../assets/node.png";
 import express from "../assets/express.png";
 import mongo from "../assets/mongo.png";
 import firebase from "../assets/firebase.png";
+import ScrollTrigger from 'react-scroll-trigger';
+
+
 
 const Experience = () => {
+  
   const techs = [
     {
       id: 1,
@@ -41,8 +45,8 @@ const Experience = () => {
     },
     {
       id: 5,
-      src: nextjs,
-      title: "Next JS",
+      src: cpp,
+      title: "C++",
       style: "shadow-white",
     },
     {
@@ -88,15 +92,21 @@ const Experience = () => {
       style: "shadow-yellow-400",
     },
   ];
+  const [isVisible, setIsVisible] = useState(false);
 
+  const handleScrollEnter = () => {
+    setIsVisible(true);
+  };
   return (
     <div
       name="experience"
-      className=" w-full h-screen pt-40 my-60"
+      className=" w-full h-full flex flex-col justify-center md: pt-16  " 
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <ScrollTrigger onEnter={handleScrollEnter}>
+     
+      <div className= {`sliding-comp ${isVisible ? 'visible' : ''} max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white`}>
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline ">
+          <p className="text-4xl font-bold border-b-4 border-white p-2 inline ">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
@@ -114,6 +124,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+      </ScrollTrigger>
     </div>
   );
 };

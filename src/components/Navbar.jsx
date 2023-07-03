@@ -30,14 +30,15 @@ const Navbar = () => {
 
     ]
   return (
-    <div className='flex justify-between items-center w-full h-20 sticky top-0 text-white bg-black px-4 '>
+    <div className='flex justify-between items-center w-full h-20 fixed text-white bg-black px-4 navbar opacity-0.5 '>
         <div>
           <h1 className='text-5xl font-signature ml-2'>Yogesh</h1>
         </div>
         <ul className='hidden md:flex'>
+            
             {links.map(({id,link})=>{
                 return(
-                 <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'><Link to={link} smooth duration-500>{link}</Link></li>
+                 <li key={id} className='px-4 cursor-pointer capitalize font-medium text-white hover:scale-110 duration-200'><Link to={link} smooth duration-500>{link}</Link></li>
             
 
             )})}
@@ -47,11 +48,11 @@ const Navbar = () => {
         </ul>
         <div onClick={()=>{
             setnav(!nav)
-        }} className='cursor-pointer pr-4 z-10 text-gray-500 md:hidden'>
-            {nav ? <FaTimes className='text-2xl'/> : <FaBars className='text-2xl'/>}
+        }} className='cursor-pointer pr-4 z-10 text-white md:hidden'>
+            {nav ? <FaTimes className='text-2xl '/> : <FaBars className='text-2xl'/>}
 
         </div>
-        {nav && <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500 '>
+        {nav && <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-yellow-300 to-yellow-900 '>
             {links.map(({id,link})=>{
                 return(
                     <li key={id}className='px-4 cursor-pointer capitalize py-6 text-4xl'><Link onClick={()=>setnav(!nav)} to={link} smooth duration-500>{link}</Link></li>

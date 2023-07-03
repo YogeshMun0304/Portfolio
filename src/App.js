@@ -11,7 +11,7 @@ import Sociallinks from "./components/Sociallinks";
 function App() {
  
   return (
-    <div >
+    <div className=" bg-gradient-to-b from-yellow-300 to-yellow-900" >
      
        <Navbar />
      <Home/>
