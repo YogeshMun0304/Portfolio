@@ -15,14 +15,34 @@ const About = () => {
         <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 border-white">About</p>
         </div>
-        <p className="text-xl mt-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa eaque ut nostrum nam temporibus tempora assumenda inventore itaque impedit culpa voluptas sint ea reprehenderit excepturi ipsam a quaerat modi nisi quidem voluptatibus explicabo, delectus possimus! Quaerat asperiores fugit reiciendis?
-
+        <p className="text-xl mt-5">
+        "Hello, I'm Yogesh, a passionate Full Stack MERN Developer with a creative twist. Beyond coding, I find inspiration in art, music, and travel, which infuses my work with a unique perspective. With a solid foundation in HTML, CSS, JavaScript, and MongoDB, I'm committed to crafting engaging user experiences and scalable solutions. Let's collaborate on projects that blend my technical expertise with my love for creativity. Feel free to explore my portfolio and let's bring your ideas to life!"
         </p>
         <br />
-        <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quas, repudiandae omnis architecto dolore iste repellendus cumque libero ad nam fugiat at cum amet dicta ipsam accusantium, vel voluptas in rerum adipisci. Excepturi dolorum non delectus exercitationem eius pariatur explicabo inventore velit, fuga itaque nihil sapiente at commodi iure voluptatibus.
+        <div className="pb-8">
+            <p className="text-4xl font-bold inline border-b-4 mt-5 border-white">Educational Qualifications</p>
+        </div>
+        <p className="text-xl mt-1 ">
+            <ul className="bullet-list flex flex-col gap-10">
+              <li>BTech in Computer Science And Engineering,
+                <br />
+                <div className="flex justify-between w-1/2 text-md">
+                <span className="text-white">IIIT BBSR(2021-2025)</span>
+                <span className="text-white">CGPA 8.90</span>
+                </div>
+                
 
+              </li>
+              <li>CBSE Senior Secondary School,
+                <br />
+                <div className="flex justify-between w-1/2 text-md">
+                <span className="text-white">Bhubaneshwar Model Public School,</span>
+                <span className="text-white">12th Board-96%</span>
+                </div>
+                
+
+              </li>
+            </ul>
         </p>
 
       </div>

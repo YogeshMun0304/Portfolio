@@ -63,12 +63,10 @@ const Home = () => {
       <div className=" max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full px-4">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white slide-out-image">
-            I'm a Full Stack Developer
+            I'M YOGESH MUNDRA
           </h2>
-          <p className="text-white py-4 max-w-md">
-            I have 8 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+          <p className="text-white py-4 max-w-md text-2xl">
+            A Full Stack Developer
           </p>
           <div>
             <button
