@@ -52,7 +52,7 @@ const Navbar = () => {
             {nav ? <FaTimes className='text-2xl '/> : <FaBars className='text-2xl'/>}
 
         </div>
-        {nav && <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-yellow-300 to-yellow-900 transition-transform duration-500 ease-in-out '>
+        {nav && <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-900 to-gray-500 transition-transform duration-500 ease-in-out '>
             {links.map(({id,link})=>{
                 return(
                     <li key={id}className='px-4 cursor-pointer capitalize py-6 text-4xl'><Link onClick={()=>setnav(!nav)} to={link} smooth duration-500>{link}</Link></li>
