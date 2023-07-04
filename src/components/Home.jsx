@@ -47,7 +47,7 @@ const Home = () => {
                 <HiDocument size={30}/>
                 </>
             ),
-            href: 'https://linkedin.com',
+            href: '/resume.pdf',
             style: 'rounded-br-md',
             download: true
 

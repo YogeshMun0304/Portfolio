@@ -35,7 +35,7 @@ const Navbar = () => {
           <h1 className='text-5xl font-signature ml-2'>Yogesh</h1>
         </div>
         <ul className='hidden md:flex'>
-            
+
             {links.map(({id,link})=>{
                 return(
                  <li key={id} className='px-4 cursor-pointer capitalize font-medium text-white hover:scale-110 duration-200'><Link to={link} smooth duration-500>{link}</Link></li>
@@ -52,7 +52,7 @@ const Navbar = () => {
             {nav ? <FaTimes className='text-2xl '/> : <FaBars className='text-2xl'/>}
 
         </div>
-        {nav && <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-yellow-300 to-yellow-900 '>
+        {nav && <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-yellow-300 to-yellow-900 transition-transform duration-500 ease-in-out '>
             {links.map(({id,link})=>{
                 return(
                     <li key={id}className='px-4 cursor-pointer capitalize py-6 text-4xl'><Link onClick={()=>setnav(!nav)} to={link} smooth duration-500>{link}</Link></li>
