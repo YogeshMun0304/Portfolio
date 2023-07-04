@@ -20,7 +20,7 @@ const About = () => {
         </p>
         <br />
         <div className="pb-8">
-            <p className="text-4xl font-bold inline border-b-4 mt-5 border-white">Educational Qualifications</p>
+            <p className="text-2xl font-bold inline border-b-4 mt-5 border-white">Educational Qualifications</p>
         </div>
         <p className="text-xl mt-1 ">
             <ul className="bullet-list flex flex-col gap-10">
