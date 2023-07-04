@@ -99,11 +99,11 @@ const Home = () => {
           </div>
 
         </div>
-        <div className="mt-4" >
+        <div className="mt-0 md:mt-4" >
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full slide-in-image"
+            className="rounded-2xl mx-auto w-2/3 md:w-3/4 slide-in-image"
           />
         </div>
       </div>

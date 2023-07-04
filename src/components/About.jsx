@@ -9,14 +9,14 @@ const About = () => {
     setIsVisible(true);
   };
   return (
-    <div name="about" className="w-full h-screen  text-white flex flex-col justify-center">
+    <div name="about" className="w-full h-screen  text-white flex flex-col justify-center mt-20 md:mt-10">
       <ScrollTrigger onEnter={handleScrollEnter}>
       <div className= {`sliding-comp ${isVisible ? 'visible' : ''} max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full`} >
         <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 border-white">About</p>
         </div>
         <p className="text-xl mt-5">
-        "Hello, I'm Yogesh, a passionate Full Stack MERN Developer with a creative twist. Beyond coding, I find inspiration in art, music, and travel, which infuses my work with a unique perspective. With a solid foundation in HTML, CSS, JavaScript, and MongoDB, I'm committed to crafting engaging user experiences and scalable solutions. Let's collaborate on projects that blend my technical expertise with my love for creativity. Feel free to explore my portfolio and let's bring your ideas to life!"
+        "Hello, I'm Yogesh, a passionate Full Stack MERN Developer with a creative twist. Beyond coding, I find inspiration in art, music, and travel, which infuses my work with a unique perspective. With a solid foundation in HTML, CSS, JavaScript, and MongoDB, I'm committed to crafting engaging user experiences and scalable solutions."
         </p>
         <br />
         <div className="pb-8">
